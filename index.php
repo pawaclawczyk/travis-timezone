@@ -7,6 +7,14 @@
 
     echo date_default_timezone_get() . "\n";
 
-    $date = new \DateTime('201511-27');
+    echo "\\DateTime('2015-11-27')";
+
+    $date = new \DateTime('2015-11-27');
+
+    print_r($date, false);
+
+    echo "\\DateTime('2015-11-27', new \\DateTimeZone('GMT'))";
+
+    $date = new \DateTime('2015-11-27', new \DateTimeZone('GMT'));
 
     print_r($date, false);
