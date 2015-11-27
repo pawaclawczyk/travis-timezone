@@ -7,3 +7,6 @@
 
     echo date_default_timezone_get() . "\n";
 
+    $date = new \DateTime('201511-27');
+
+    print_r($date, false);
